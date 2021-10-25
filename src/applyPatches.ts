@@ -221,7 +221,7 @@ export function applyPatchesForApp({
     )
   }
 
-  if (errors.length) {
+  if (errors.length || warnings.length) {
     process.exit(shouldExitWithError ? 1 : 0)
   }
 }
